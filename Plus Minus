@@ -1,0 +1,23 @@
+
+void plusMinus(int arr_count, int* arr) {
+    
+    int pl,mi,ze;
+    pl=mi=ze=0;
+    int i = 0;
+    while(i<arr_count)
+    {
+        //printf("%d\n",arr[i]);
+        if(arr[i] > 0)
+            pl++;
+        else if(arr[i] < 0)
+            mi++;
+        else {
+            ze++;
+        }
+        i++;
+    }
+    
+    printf("%.6f\n",(float)pl/i);
+    printf("%.6f\n",(float)mi/i);
+    printf("%.6f\n",(float)ze/i);
+}
